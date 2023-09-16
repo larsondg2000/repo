@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 import requests
 
 # Get JSON Data from Federal Reserve
