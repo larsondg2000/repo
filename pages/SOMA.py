@@ -13,7 +13,7 @@ total0 = float(soma_ops[-1]['total']) / 1000000000
 total1 = float(soma_ops[-2]['total']) / 1000000000
 diff = total0 - total1
 
-# get values for pie chart
+# get values for chart
 list_of_values1 = list(soma_ops[-1].values())[1:-5]
 list_of_values1 = [float(ele) for ele in list_of_values1]
 list_of_values2 = list(soma_ops[-1].values())[6:-1]
