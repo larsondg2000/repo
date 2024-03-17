@@ -1,5 +1,5 @@
 # Federal Reserve Repo, Reverse Repo and SOMA using APIs in streamlit
-
+![alt-text](ws.jpeg "Wall Street")
 ## Repo and Reverse Repo
 API Call:
 url = "https://markets.newyorkfed.org/api/rp/all/all/results/lastTwoWeeks.json"
