@@ -19,6 +19,7 @@ These operations are used to manage the supply of reserves in the banking system
 * (3) FAQs: Overnight Fixed-Rate Reverse Repurchase Agreement Operational .... https://resources.newyorkfed.org/markets/rrp_faq_130920.html.
 * (4) FAQs: Reverse Repurchase Agreement Operations - FEDERAL RESERVE BANK of .... https://www.newyorkfed.org/markets/rrp_faq.html.
 
+
 <img alt="alt-text" height="40" src="streamlit.png" title="Streamlit" width="200"/>
 
 ## Repo and Reverse Repo
@@ -30,7 +31,7 @@ repo_ops = (content['repo']['operations'])
 
 <img alt="alt-text" height="400" src="repo.png" title="Repo" width="2000"/>
 
-Data is exacted from JSON object to create the following:
+Data is extracted from JSON object to create the following:
   1) Repo and Reverse Repo operations for the day
   2) Bar chart of reverse repo operations for last two weeks
   3) Bar chart of repo operations for last two weeks
@@ -46,7 +47,7 @@ soma_ops = (content['soma']['summary'])
 
 ![alt-text](soma_pic.png "SOMA")
 
-Data is exacted from JSON object to create the following:
+Data is extracted from JSON object to create the following:
   1) Total SOMA holdings
   2) Bar chart of SOMA holdings
   3) Table of SOMA holdings
