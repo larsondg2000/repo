@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 
 # Page title
 st.set_page_config(layout="wide", page_title="Repo Operations Explained", page_icon=":material/currency_exchange:")
