@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import requests
 
+# Setup page
+st.set_page_config(layout="wide", page_title="SOMA", page_icon=":material/attach_money:")
+
 # Get JSON Data from Federal Reserve
 url = "https://markets.newyorkfed.org/api/soma/summary.json"
 request = requests.get(url)
@@ -47,10 +50,7 @@ soma_totals_list = [float(ele) for ele in soma_totals_list]
 totals_dict = {"Dates": soma_dates_list, "Total Holdings": soma_totals_list}
 totals_df = pd.DataFrame(totals_dict)
 
-# Setup page
-st.set_page_config(layout="wide")
-
-st.title("System Open Market Account (SOMA) Holdings of Domestic Securities")
+st.title(":rainbow[System Open Market Account (SOMA) Holdings of Domestic Securities]")
 st.title("")
 
 st.header(f"Current Holdings as of {date_soma_current} ", divider='rainbow')

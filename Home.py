@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import requests
 
+st.set_page_config(layout="wide", page_title="Repo and Reverse Repos", page_icon=":material/trending_up:")
+
 # Get JSON Data from Federal Reserve
 url = "https://markets.newyorkfed.org/api/rp/all/all/results/lastTwoWeeks.json"
 request = requests.get(url)
@@ -52,11 +54,7 @@ dict3 = {'Date': dates, 'Total': total}
 df3 = pd.DataFrame(dict3)
 df3['Total'] = df3['Total'].div(1000000000)
 
-
-st.set_page_config(layout="wide")
-
-
-st.title("Federal Reserve Repo and Reverse Repo Operations")
+st.title(":rainbow[Federal Reserve Repo and Reverse Repo Operations]")
 
 
 st.title("")
