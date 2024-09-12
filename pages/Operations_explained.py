@@ -1,20 +1,20 @@
 import streamlit as st
 
 # Page title
-st.set_page_config(layout="wide", page_title="Repo Operations Explained", page_icon=":material/currency_exchange:")
-st.title(":rainbow[Federal Reserve: Repo and Reverse Repo Operations Explained]")
-st.divider()
+st.set_page_config(page_title="Repo Operations Explained", page_icon=":material/currency_exchange:")
+
+st.header(":rainbow[Repo and Reverse Repo Operations Explained]", divider='rainbow')
 
 # Section 1: Introduction
-st.header("Introduction to Repo and Reverse Repo Operations")
+st.header("Repo and Reverse Repos")
 st.write("""
 The Federal Reserve conducts repo (repurchase agreements) and reverse repo (reverse repurchase agreements) operations 
 to manage short-term liquidity in the financial system. These are critical tools for maintaining stability in the 
 money markets and achieving the Federal Reserve's monetary policy goals.
 
 In simple terms:
-- **Repo**: The Federal Reserve provides short-term loans to financial institutions, using securities as collateral.
-- **Reverse Repo**: The Federal Reserve borrows money from financial institutions and provides securities as collateral.
+- :blue[**Repo**:] The Federal Reserve provides short-term loans to financial institutions, using securities as collateral.
+- :blue[**Reverse Repo**:] The Federal Reserve borrows money from financial institutions and provides securities as collateral.
 """)
 st.divider()
 
@@ -70,7 +70,16 @@ Step 4: Bank -> (Receives $100.1 million in cash) -> Fed
 st.code(reverse_repo_diagram, language='plain')
 st.divider()
 
-# Section 4: Why Are Repo and Reverse Repo Important?
+st.header("Repo/Reverse Repo Rate")
+st.write("""
+The :blue[**repo rate**] is the interest rate at which a central bank, like the Federal Reserve, lends money to 
+commercial banks against collateral for short-term needs. Conversely, the :blue[**reverse repo rate**] is the interest 
+rate at which the central bank borrows money from commercial banks, providing them with a safe place to park their 
+excess funds.
+""")
+st.divider()
+
+# Why Are Repo and Reverse Repo Important?
 st.header("Importance of Repo and Reverse Repo Operations")
 st.write("""
 Repo and reverse repo operations are essential for controlling liquidity in the banking system:
@@ -87,7 +96,5 @@ st.divider()
 st.subheader("Example of Repo and Reverse Repo")
 
 # Repo Diagram
-st.image("repo_example.png")
+st.image("repo_example.png", caption='Repo/Reverse Repo Example')
 
-# Footer
-st.write("This page is part of a project explaining key Federal Reserve operations.")
