@@ -3,7 +3,7 @@ import streamlit as st
 # Page title
 st.set_page_config(page_title="Repo Operations Explained", page_icon=":material/currency_exchange:")
 
-st.header(":rainbow[Repo and Reverse Repo Operations Explained]", divider='rainbow')
+st.header(":rainbow[Repo and Reverse Repo Operations]", divider='rainbow')
 
 # Section 1: Introduction
 st.header("Repo and Reverse Repos")
