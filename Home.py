@@ -29,9 +29,8 @@ t1 = total[1] / 1000000000
 t_delta = round((t0 - t1), 3)
 
 # get daily repo rate and delta
-repo_rate = [repo_ops[i*2]['details'][0]['percentAwardRate'] for i in range(len(repo))]
-rate0 = repo_rate[0]
-rate1 = repo_rate[1]
+rate0 = repo_ops[1]['details'][0]['percentAwardRate']
+rate1 = repo_ops[3]['details'][0]['percentAwardRate']
 rate_delta = round((rate0 - rate1), 2)
 
 # get list of dates and daily repo rate
@@ -39,7 +38,7 @@ dates = [value['operationDate'] for value in repo_ops if value['operationType'] 
 date = dates[0]
 
 # Create pandas data frame for charts
-dict = {'Date': dates, 'Reverse Repo': rev_repo, 'Repo': repo, 'Total': total, 'Repo Rate': repo_rate}
+dict = {'Date': dates, 'Reverse Repo': rev_repo, 'Repo': repo, 'Total': total}
 df = pd.DataFrame(dict)
 
 dict1 = {'Date': dates, 'Reverse Repo': rev_repo}
